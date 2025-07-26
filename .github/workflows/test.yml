@@ -34,6 +34,7 @@ jobs:
           node-version: 18
 
       - run: npm ci
+      - run: cp .env.test .env
       - run: npx prisma generate
       - run: npx prisma db push
       - run: npm test
