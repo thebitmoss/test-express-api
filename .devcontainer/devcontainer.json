@@ -1,0 +1,13 @@
+{
+  "name": "test-devcontainer",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "zsh"
+  },
+  "postCreateCommand": "chsh -s $(which zsh) && cp /zshrc.template ~/.zshrc",
+  "remoteUser": "root",
+  "features": {},
+  "extensions": ["dbaeumer.vscode-eslint"]
+}
