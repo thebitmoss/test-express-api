@@ -11,5 +11,6 @@
       "src": "/api/.*",
       "dest": "app.js"
     }
-  ]
+  ],
+  "buildCommand": "npm install && npx prisma generate"
 }
